@@ -57,7 +57,7 @@ public class TreeTraverse {
     }
 
     public static void inorderTraverse(TreeNode node) {//纵向中序  循环算法
-        if (node==null) return;
+        if (node == null) return;
         LinkedList<TreeNode> stack = new LinkedList<>();
         while (true) {
             //循环地把右和中放入stack，直到再也没有左子结点
@@ -85,7 +85,7 @@ public class TreeTraverse {
             if (!stack.isEmpty()) {
                 node = stack.pop();
             } else {
-              return;
+                return;
             }
         }
     }
