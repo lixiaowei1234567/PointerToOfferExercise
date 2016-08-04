@@ -1,7 +1,8 @@
 package pointer_to_offer;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题4：替换字符串中的空格
+ * 1.新思路——从尾到头的替换
  */
 public class ReplaceSpaceDemo {
     final char[] chars;

@@ -1,7 +1,9 @@
 package pointer_to_offer;
 
 /**
- * Created by Administrator on 2016/8/2.
+ * 面试题11
+ * 1.考虑特殊错误输出 0的负数次方
+ * 2.考虑次方的正负数
  */
 public class PowerSolution {
 

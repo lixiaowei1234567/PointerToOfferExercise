@@ -1,7 +1,10 @@
 package pointer_to_offer;
 
 /**
- * Created by Administrator on 2016/8/2.
+ * 面试题9
+ * 1. 斐波那契数列的基本算法
+ * 2. 考虑递归算法的性能问题
+ * 3. 使用循环算法
  */
 public class FibonacciSolution {
     public static long fibonacci(int n) {

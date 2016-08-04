@@ -4,7 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题7 延展
+ * 1.队列和栈的使用
  */
 public class TwoQueueStack {
     Queue<Integer> queue1 = new LinkedList<>();

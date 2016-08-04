@@ -3,7 +3,8 @@ package pointer_to_offer;
 import java.util.LinkedList;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题7
+ * 1.队列和栈的使用
  */
 public class TwoStackQueue {
     private static class Stack extends LinkedList<Integer> {

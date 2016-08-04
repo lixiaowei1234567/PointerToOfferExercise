@@ -1,7 +1,9 @@
 package pointer_to_offer;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题3：二维数组中的查找
+ * 1.思路——右上角数数值的特殊性
+ * 2.循环算法
  */
 public class SearchIn2DArray {
     final int[][] theArray;

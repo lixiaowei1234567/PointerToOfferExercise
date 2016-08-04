@@ -3,7 +3,9 @@ package pointer_to_offer;
 import java.util.LinkedList;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题5：从尾到头打印链表
+ * 1.递归
+ * 2.显式用栈的循环写法
  */
 public class PrintLinkedListReversely {
     private static class ListNode {

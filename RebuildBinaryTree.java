@@ -3,7 +3,9 @@ package pointer_to_offer;
 import java.util.Arrays;
 
 /**
- * Created by Administrator on 2016/8/1.
+ * 面试题6：重建二叉树
+ * 1. 二叉树的遍历概念
+ * 2. 递归算法
  */
 public class RebuildBinaryTree {
 
