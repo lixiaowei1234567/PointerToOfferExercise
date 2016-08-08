@@ -70,9 +70,10 @@ public class TreeTraverse {
             }
 
             node = stack.pop();//获取stack顶层结点——没有左子结点的一个结点
-            while (!stack.isEmpty() && node.getRight() == null) {
+            while (node.getRight() == null) {
                 //如果这个结点也没有右子结点，那么直接输出
                 print(node.getValue());
+                if (stack.isEmpty()) return;
                 node = stack.pop();//获取上一个结点——一定是现在结点的父结点
             }
 
@@ -82,11 +83,7 @@ public class TreeTraverse {
             //将该右结点弹出，并且运用相同的逻辑遍历它的子孙结点们
 
             print(node.getValue());
-            if (!stack.isEmpty()) {
-                node = stack.pop();
-            } else {
-                return;
-            }
+            node = stack.pop();
         }
     }
 
@@ -106,8 +103,10 @@ public class TreeTraverse {
                 stack.push(node);
             }
 
+            //此时的node是一个没有左节点的节点，并且没有入栈
+
             // 当前节点无右子——即只需要输出左和中;或右子刚刚已经输出，说明左右都已经输出，接着输出当前结点
-            while (node != null && (node.getRight() == null || node.getRight() == temp)) {
+            while ((node.getRight() == null || node.getRight() == temp)) {
                 print(node.getValue());
                 temp = node;// 记录上一个已输出节点
                 if (stack.isEmpty()) return;
@@ -222,7 +221,8 @@ public class TreeTraverse {
 
         void setLeft(TreeNode left) {
             this.left = left;
-            left.parent = this;
+            if (left != null)
+                left.parent = this;
         }
 
         TreeNode getRight() {
@@ -231,7 +231,8 @@ public class TreeTraverse {
 
         void setRight(TreeNode right) {
             this.right = right;
-            right.parent = this;
+            if (right != null)
+                right.parent = this;
         }
 
         TreeNode getParent() {
